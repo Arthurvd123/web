@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Agenda Pessoal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Minha Agenda</h1>
+
+    <input type="text" id="tarefa" placeholder="Digite uma tarefa">
+
+    <select id="prioridade">
+        <option>Alta</option>
+        <option>Média</option>
+        <option>Baixa</option>
+    </select>
+
+    <button onclick="adicionar()">
+        Adicionar
+    </button>
+
+    <ul id="lista"></ul>
+
+    <script>
+
+        function adicionar(){
+
+            let texto = document.getElementById("tarefa").value
+            let prioridade = document.getElementById("prioridade").value
+
+            if(texto != ""){
+
+                document.getElementById("lista").innerHTML +=
+                "<li>" + texto + " - " + prioridade + "</li>"
+
+                document.getElementById("tarefa").value = ""
+            }
+        }
+
+    </script>
+
+</body>
