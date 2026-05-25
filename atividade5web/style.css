@@ -1,0 +1,25 @@
+body{
+    background-color: grey;
+    font-family: Arial;
+}
+
+.card{
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+}
+
+.alta{
+    background-color: red;
+    color:black
+}
+
+.media{
+    background-color: yellow;
+    color: black;
+}
+
+.baixa{
+    background-color: green;
+    color:black
+}
